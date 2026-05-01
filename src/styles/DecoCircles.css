@@ -1,0 +1,24 @@
+.deco-circles {
+  position: absolute;
+  right: 48px;
+  bottom: 60px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.deco-circles svg {
+  width: 220px;
+  height: 220px;
+}
+
+@media (max-width: 900px) {
+  .deco-circles {
+    right: 16px;
+    bottom: 24px;
+  }
+
+  .deco-circles svg {
+    width: 140px;
+    height: 140px;
+  }
+}

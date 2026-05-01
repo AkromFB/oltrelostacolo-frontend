@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ─── CSS Variables ─── */
+:root {
+  --color-amber: #E8A820;
+  --color-dark: #1C3830;
+  --color-dark2: #2A4A3E;
+  --color-white: #ffffff;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* ─── Reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-amber);
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── App wrapper ─── */
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ─── Grid background lines ─── */
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grid-col {
+  flex: 1;
+  border-right: 1px solid rgba(28, 56, 48, 0.10);
+}
+
+/* ─── Utility ─── */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ─── Login Link ─── */
+.login-link {
+  position: fixed;
+  top: 20px;
+  right: 48px;
+  z-index: 100;
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease;
+}
+
+.login-link:hover {
+  background: var(--color-dark2);
+}
+
+@media (max-width: 900px) {
+  .login-link {
+    right: 24px;
+    padding: 10px 18px;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
