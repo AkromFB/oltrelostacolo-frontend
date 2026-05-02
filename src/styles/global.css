@@ -97,3 +97,325 @@ button {
 ul {
   list-style: none;
 }
+
+/* ─── Auth Links ─── */
+.auth-links {
+  position: fixed;
+  top: 20px;
+  right: 48px;
+  z-index: 100;
+  display: flex;
+  gap: 12px;
+}
+
+/* ─── Sections Common ─── */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  color: var(--color-dark);
+  opacity: 0.75;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--color-dark);
+  letter-spacing: -0.02em;
+}
+
+/* ─── Services Section ─── */
+.services-section {
+  position: relative;
+  z-index: 2;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(28, 56, 48, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.service-icon {
+  font-size: 24px;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  opacity: 0.8;
+}
+
+/* ─── Method Section ─── */
+.method-section {
+  position: relative;
+  z-index: 2;
+  background: rgba(28, 56, 48, 0.05);
+}
+
+.method-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-top: 48px;
+  align-items: center;
+}
+
+.method-text p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-dark);
+  margin-bottom: 20px;
+}
+
+.method-list {
+  margin-top: 24px;
+}
+
+.method-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.method-list li span {
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+.method-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--color-dark);
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ─── Why Us Section ─── */
+.why-us-section {
+  position: relative;
+  z-index: 2;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.why-item {
+  padding: 32px;
+  border-left: 2px solid var(--color-dark);
+}
+
+.why-item h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.why-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  opacity: 0.8;
+}
+
+/* ─── CTA Section ─── */
+.cta-section {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.cta-section .section-eyebrow {
+  color: var(--color-white);
+  opacity: 0.7;
+}
+
+.cta-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.cta-subtitle {
+  font-size: 16px;
+  color: var(--color-white);
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+
+.cta-btn-large {
+  background: var(--color-amber);
+  color: var(--color-dark);
+  border-radius: 999px;
+  padding: 18px 42px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease;
+}
+
+.cta-btn-large:hover {
+  background: #f0b930;
+}
+
+/* ─── Footer ─── */
+.footer {
+  position: relative;
+  z-index: 2;
+  background: var(--color-dark2);
+  color: var(--color-white);
+  padding-bottom: 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-top: 48px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.footer-links h5,
+.footer-contact h5 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 48px;
+  padding-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .auth-links {
+    right: 24px;
+  }
+
+  .section-container {
+    padding: 48px 24px;
+  }
+
+  .method-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
