@@ -26,10 +26,12 @@ function Hero() {
         Siamo il partner strategico delle aziende che vogliono margini più alti,
         operazioni più snelle e decisioni basate sui dati — non sulle impressioni.
       </p>
-
-      <button className="hero-cta">
-        Richiedi una consulenza
-      </button>
+      <div>
+        <button className="hero-cta">
+          Richiedi una consulenza →
+        </button>
+        <a data-testid="hero-cta-secondary" href="#metodo" class="btn-ghost">Scopri il metodo</a>
+      </div>
 
       <DecoCircles />
     </section>

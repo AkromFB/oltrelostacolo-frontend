@@ -3,7 +3,7 @@ import React from 'react';
 function OvalDashed() {
   return (
     <svg
-      className="oval-svg"
+      className="oval-svg slow-spin"
       viewBox="0 0 260 140"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

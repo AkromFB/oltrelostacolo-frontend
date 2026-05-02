@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <div className="grid-bg">
-        {Array.from({ length: 8 }).map((_, i) => (
+        {Array.from({ length: 11 }).map((_, i) => (
           <div key={i} className="grid-col" />
         ))}
       </div>
@@ -24,7 +24,7 @@ function App() {
       </div> */}
       <Navbar />
       <Hero />
-
+      
       <section className="services-section">
         <div className="section-container">
           <div className="section-header">

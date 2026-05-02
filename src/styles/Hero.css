@@ -89,8 +89,8 @@
 
 .oval-svg {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0px;
+  left: -50px;
   transform: translate(-50%, -55%);
   width: 130%;
   height: 160%;
@@ -115,7 +115,7 @@
   margin-top: 36px;
   align-self: flex-start;
   background: var(--color-dark);
-  color: var(--color-white);
+  color: var(--color-amber);
   border-radius: 999px;
   padding: 16px 32px;
   font-family: var(--font-body);
@@ -131,6 +131,24 @@
 
 .hero-cta:hover {
   background: var(--color-dark2);
+}
+
+.hero-cta-secondary {
+  margin-top: 36px;
+  align-self: flex-start;
+  background: var(--color-dark);
+  color: var(--color-amber);
+  border-radius: 999px;
+  padding: 16px 32px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease;
+  animation: fadeUp 0.8s ease both 0.55s;
 }
 
 /* ─── Responsive ─── */

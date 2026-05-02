@@ -29,7 +29,7 @@ function Navbar() {
       </ul>
 
       <button className="cta-btn">
-        Richiedi una consulenza →
+        Richiedi una consulenza
       </button>
     </nav>
   );
