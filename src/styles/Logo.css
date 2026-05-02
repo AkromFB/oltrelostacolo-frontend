@@ -5,9 +5,9 @@
   text-decoration: none;
 }
 
-.logo-svg {
-  width: 52px;
-  height: 44px;
+.logo-img {
+  width: 84px;
+  height: 56px;
   flex-shrink: 0;
 }
 

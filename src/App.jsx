@@ -14,14 +14,14 @@ function App() {
           <div key={i} className="grid-col" />
         ))}
       </div>
-      <div className="auth-links">
+      {/* <div className="auth-links">
         <button onClick={() => navigate('/login')} className="login-link">
           Login →
         </button>
         <button onClick={() => navigate('/register')} className="login-link">
           Registrati →
         </button>
-      </div>
+      </div> */}
       <Navbar />
       <Hero />
 

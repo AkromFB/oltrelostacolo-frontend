@@ -1,10 +1,20 @@
 .navbar {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 22px 48px;
+  background: transparent;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.navbar-scrolled {
+  background: var(--color-dark);
+  padding: 16px 48px;
 }
 
 .nav-links {
@@ -19,11 +29,15 @@
   color: var(--color-dark);
   letter-spacing: 0.01em;
   opacity: 0.85;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, color 0.3s ease;
 }
 
 .nav-links a:hover {
   opacity: 1;
+}
+
+.navbar-scrolled .nav-links a {
+  color: var(--color-amber);
 }
 
 .cta-btn {
@@ -38,12 +52,21 @@
   align-items: center;
   gap: 10px;
   letter-spacing: 0.01em;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.3s ease;
   white-space: nowrap;
 }
 
 .cta-btn:hover {
   background: var(--color-dark2);
+}
+
+.navbar-scrolled .cta-btn {
+  background: var(--color-amber);
+  color: var(--color-dark);
+}
+
+.navbar-scrolled .cta-btn:hover {
+  background: #f0b930;
 }
 
 /* ─── Responsive ─── */
