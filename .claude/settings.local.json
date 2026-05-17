@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:beyond-consulting.preview.emergentagent.com)"
+    ]
+  }
+}
