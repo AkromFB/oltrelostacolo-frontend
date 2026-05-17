@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Logo from './Logo';
 import '../styles/Navbar.css';
 
 const NAV_LINKS = ['Chi siamo', 'Servizi', 'Metodo', 'Perché noi'];
 
-function Navbar() {
+function Navbar({ isMailForm }) {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,10 +29,14 @@ function Navbar() {
           </li>
         ))}
       </ul>
-
-      <button className="cta-btn">
-        Richiedi una consulenza
-      </button>
+      {!isMailForm ?(
+        <button className="cta-btn"
+        onClick={() => navigate('/mail-form')}>
+          Richiedi una consulenza
+        </button>
+        )
+        :null
+      }
     </nav>
   );
 }

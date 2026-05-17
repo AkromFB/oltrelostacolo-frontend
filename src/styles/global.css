@@ -462,6 +462,23 @@ ul {
   background: #f0b930;
 }
 
+.btn-ghost{
+  margin-top: 36px;
+  align-self: flex-start;
+  color: var(--color-dark);
+  border-radius: 999px;
+  border: solid var(--color-dark) 2px;
+  padding: 16px 32px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease;
+  animation: fadeUp 0.8s ease both 0.55s;
+}
 /* ─── Footer ─── */
 .footer {
   position: relative;
@@ -566,6 +583,9 @@ ul {
 }
 
 @media (max-width: 900px) {
+  .hero{
+    margin-top: 12%;
+  }
   .about-content {
     padding-top: 64px;
     padding-bottom: 96px;

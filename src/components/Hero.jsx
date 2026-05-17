@@ -30,7 +30,7 @@ function Hero() {
         <button className="hero-cta">
           Richiedi una consulenza →
         </button>
-        <a data-testid="hero-cta-secondary" href="#metodo" class="btn-ghost">Scopri il metodo</a>
+        <a data-testid="hero-cta-secondary" href="#metodo" className="btn-ghost">Scopri il metodo</a>
       </div>
 
       <DecoCircles />

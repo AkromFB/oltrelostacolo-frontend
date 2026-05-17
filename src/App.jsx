@@ -1,19 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import VerticalLines from './components/VerticalLines';
 import Hero from './components/Hero';
 import './styles/global.css';
 
 function App() {
-  const navigate = useNavigate();
 
   return (
     <div className="app">
-      <div className="grid-bg">
-        {Array.from({ length: 11 }).map((_, i) => (
-          <div key={i} className="grid-col" />
-        ))}
-      </div>
+      <VerticalLines/>
       {/* <div className="auth-links">
         <button onClick={() => navigate('/login')} className="login-link">
           Login →
@@ -22,7 +17,7 @@ function App() {
           Registrati →
         </button>
       </div> */}
-      <Navbar />
+      <Navbar isMailForm={false}/>
       <Hero />
       <section id="chi-siamo" data-testid="about-section" className="about-section">
   <div className="about-marquee">
