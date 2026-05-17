@@ -462,7 +462,7 @@ ul {
   background: #f0b930;
 }
 
-.btn-ghost{
+.btn-ghost {
   margin-top: 36px;
   align-self: flex-start;
   color: var(--color-dark);
@@ -479,6 +479,7 @@ ul {
   transition: background 0.2s ease;
   animation: fadeUp 0.8s ease both 0.55s;
 }
+
 /* ─── Footer ─── */
 .footer {
   position: relative;
@@ -583,9 +584,10 @@ ul {
 }
 
 @media (max-width: 900px) {
-  .hero{
+  .hero {
     margin-top: 12%;
   }
+
   .about-content {
     padding-top: 64px;
     padding-bottom: 96px;
