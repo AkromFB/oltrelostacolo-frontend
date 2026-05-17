@@ -5,7 +5,7 @@ function Footer(){
         <div className="section-container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <span className="footer-logo">Oltre Lo Stacolo</span>
+              <span className="footer-logo">Oltre L'ostacolo</span>
               <p>Consulenza strategica per aziende che vogliono crescere con metodo.</p>
             </div>
             <div className="footer-links">
@@ -25,11 +25,11 @@ function Footer(){
               <h5>Contatti</h5>
               <p>info@oltrelostacolo.it</p>
               <p>+39 02 1234567</p>
-              <p>Milano, Italia</p>
+              <p>Palermo, Italia</p>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Oltre Lo Stacolo. Tutti i diritti riservati.</p>
+            <p>&copy; 2026 Oltre L'otacolo. Tutti i diritti riservati.</p>
           </div>
         </div>
       </footer>);

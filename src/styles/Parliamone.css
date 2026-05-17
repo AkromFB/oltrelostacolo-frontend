@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+.parliamone {
+  background-color: #0f2e25;
+  color: #f5f0e8;
+  padding: 90px 64px 100px;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+/* ── decorative SVGs ── */
+.parliamone__deco-tr {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.parliamone__deco-tr svg {
+  width: 100%;
+  height: 100%;
+}
+
+.parliamone__deco-bl {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.parliamone__deco-bl svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── content ── */
+.parliamone__content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+}
+
+/* eyebrow */
+.parliamone__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  color: rgba(245, 240, 232, 0.6);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.parliamone__eyebrow-line {
+  display: block;
+  width: 36px;
+  height: 1.5px;
+  background: rgba(245, 240, 232, 0.5);
+  flex-shrink: 0;
+}
+
+/* headline */
+.parliamone__headline {
+  margin: 0 0 28px;
+  line-height: 1;
+}
+
+.parliamone__headline-bold {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: clamp(52px, 7vw, 96px);
+  color: #f5f0e8;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.parliamone__headline-italic {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(52px, 7vw, 96px);
+  color: #E8A820;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* subtext */
+.parliamone__subtext {
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(245, 240, 232, 0.65);
+  font-weight: 400;
+  max-width: 460px;
+  margin-bottom: 40px;
+}
+
+/* buttons */
+.parliamone__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.parliamone__btn-primary {
+  background: #E8A820;
+  color: #1C3830;
+  border: none;
+  border-radius: 999px;
+  padding: 16px 32px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.parliamone__btn-primary:hover {
+  background: #d49518;
+  transform: translateY(-1px);
+}
+
+.parliamone__btn-secondary {
+  background: transparent;
+  color: #f5f0e8;
+  border: 1.5px solid rgba(245, 240, 232, 0.4);
+  border-radius: 999px;
+  padding: 15px 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.parliamone__btn-secondary:hover {
+  border-color: rgba(245, 240, 232, 0.7);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .parliamone {
+    padding: 64px 24px 72px;
+  }
+
+  .parliamone__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
