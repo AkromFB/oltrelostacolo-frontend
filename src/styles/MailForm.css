@@ -1,58 +1,77 @@
-.form-section {
-  position: relative;
-  padding: 40px 48px 80px;
-  min-height: calc(100vh - 90px);
-  overflow: hidden;
+/* Mail Form styling – coerente con il tema del sito */
+
+.mail-form-section {
+  color: var(--color-amber);
+  padding: 80px 48px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.form-element {
-  position: relative;
-  z-index: 2;
-  padding: 40px 48px 80px;
-  min-height: calc(100vh - 90px);
+
+@media (max-width: 900px) {
+  .mail-form-section {
+    padding: 40px 24px;
+  }
+}
+
+.mail-form-section .form-element {
+  background: var(--color-dark2);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: var(--color-dark);
+  gap: 1.5rem;
+}
+
+.mail-form-section .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-form-section .form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
   color: var(--color-amber);
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
+.mail-form-section .form-group input,
+.mail-form-section .form-group textarea {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  font-family: var(--font-body);
+  color: var(--color-amber);
+  background: var(--color-dark);
+  border: 2px solid var(--color-dark2);
+  border-radius: 8px;
   box-sizing: border-box;
+  transition: border-color 0.2s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #007bff;
+.mail-form-section .form-group input:focus,
+.mail-form-section .form-group textarea:focus {
   outline: none;
+  border-color: var(--color-amber);
 }
 
-.submit-btn {
+.mail-form-section .submit-btn {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  font-weight: 600;
+  background: var(--color-dark);
+  color: var(--color-amber);
+  border: 2px solid var(--color-amber);
+  border-radius: 999px;
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.submit-btn:hover {
-  background-color: #0056b3;
+.mail-form-section .submit-btn:hover {
+  background: var(--color-amber);
+  color: var(--color-dark);
 }

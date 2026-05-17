@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/MailForm.css';
-import '../styles/global.css'
+import '../styles/global.css';
 import Navbar from '../components/Navbar';
 import VerticalLines from '../components/VerticalLines';
+import Footer from '../components/Footer';
 const MailForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -35,7 +36,7 @@ const MailForm = () => {
     <div className='app'>
     <Navbar isMailForm={true}/>
     <VerticalLines/>
-    <section className='form-section'>
+    <section className='form-section mail-form-section'>
     <form onSubmit={handleSubmit} className="form-element">
       <div className="form-group">
         <label htmlFor="name">Nome</label>
@@ -83,6 +84,7 @@ const MailForm = () => {
       <button type="submit" className="submit-btn">Invia</button>
     </form>
     </section>
+     <Footer/>
     </div>
   );
 };
